@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- style sheets -->
+
+    <!-- customized bootstrap -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- template style -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+
+    <!-- top bar -->
+    <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+        <div class="row gx-0 align-items-center topbar">
+            <div class="col-lg-5 text-center text-lg-start mb-lg-0">
+                <div class="d-flex">
+                    <a href="#" class="me-4"><i class="fas fa-envelope me-2"></i>info@vertexgpr.com</a>
+                    <a href="#" class="me-0"><i class="fas fa-phone-alt me-2"></i>832.707.1585</a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center">
+                    <a href="#" class="me-2"> Help</a><small class="small-txt"> / </small>
+                    <a href="#" class="mx-2"> Support</a><small class="small-txt"> / </small>
+                    <a href="#" class="ms-2"> Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Navbar & Hero Start -->
+    <nav class="navbar navbar-expand-lg py-4 py-lg-0 shadow ">
+        <div class="container-fluid px-4">
+            <img src="img/brand-logo.png" alt="">
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#top-navbar" aria-controls="top-navbar">
+                <i class="bi bi-grid"></i>
+            </button>
+            
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="top-navbar" aria-labelledby="top-navbarLabel">
+                <!-- navbar content -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#top-navbar" aria-controls="top-navbar">
+                    <div class="d-flex justify-content-between p-3">
+                        <img src="img/brand-logo.png" alt="">
+                        <i class="bi bi-grid"></i>
+                    </div>
+                </button>
+                <ul class="navbar-nav ms-lg-auto p-4 p-lg-0">
+                    <li class="nav-item px-3 mx-2 px-lg-0 py-1 py-lg-4">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item px-3 mx-2 px-lg-0 py-1 py-lg-4" dropdown>
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item px-3 mx-2 px-lg-0 py-1 py-lg-4">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item px-3 mx-2 px-lg-0 py-1 py-lg-4">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-item px-3 mx-2 px-lg-0 py-1 py-lg-4">
+                        <a class="nav-link" href="#">Español</a>
+                    </li>
+                    <li class="nav-item px-3 mx-2 px-lg-0 py-1 py-lg-4">
+                        <a href="" class="btn btn-primary border-secondary rounded-pill">Schedule Service</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Navbar & Hero End -->
+
+    <!-- Hero -->
+     <section id="welcome" class="py-5">
+        <div class="container px-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="py-2 text-center fw-bold">Vertex GPR</h1>
+                </div>
+                <div class="col-md-12 px-lg-0">
+                    <div class="welcome-description mt-4 text-center">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam elementum, odio sit amet molestie congue, 
+                            quam odio feugiat urna, ac commodo ipsum felis id mauris. In scelerisque odio non nulla volutpat, quis condimentum diam vehicula. Nunc a accumsan tortor. 
+                            Vivamus ultrices laoreet nibh, dignissim vulputate ex commodo ac. Nullam pharetra massa at tellus hendrerit auctor a vel nisi. Curabitur dolor quam, ornare ut semper fermentum, rutrum sodales ipsum. Duis pellentesque 
+                            sit amet est vitae feugiat. Maecenas lectus orci, condimentum ac nulla in, bibendum vestibulum nisi. Vivamus eu urna orci. Sed id magna malesuada ante porttitor euismod. 
+                            Nam dictum neque lectus, sed eleifend ipsum mattis sed. Nullam commodo scelerisque vehicula. Integer lobortis, lectus eu semper tempor, tellus ex pellentesque nibh, vitae mollis nulla tortor in diam. In varius interdum purus, 
+                            vestibulum ultricies felis laoreet in.</p>
+                        <p>Praesent rutrum est vel ipsum aliquet, eu tristique tortor tincidunt. Fusce tellus elit, commodo ac malesuada ut, laoreet sodales odio. Vestibulum in nunc tellus. Morbi sit amet lobortis neque. 
+                            Vestibulum in consequat massa. Nullam suscipit, justo vitae tincidunt viverra, 
+                            purus justo bibendum dolor, sed sollicitudin libero urna in nulla. Donec lacinia nunc quis nisi varius dapibus sit amet in enim. Vestibulum elementum risus elementum ultricies ultrices. 
+                            Maecenas congue mollis nisi, at iaculis sapien rutrum at. Praesent gravida ultricies magna quis maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                             Proin at maximus ligula. Nunc et tellus sapien.</p>
+                        <p>Aenean mattis, ante nec mollis laoreet, ex eros mollis ipsum, id commodo nisi neque sit amet enim. Donec ligula dui, scelerisque eget odio id, 
+                            ullamcorper sollicitudin odio. Donec aliquet dui in ligula elementum porta euismod vel ligula. Etiam erat erat, gravida non consequat eget, fringilla eu nunc. 
+                            Suspendisse aliquet, tortor sit amet maximus lacinia, felis nulla viverra erat, eu pharetra libero eros vel lacus. Aenean volutpat sapien erat, 
+                            id vulputate ante maximus at. Cras accumsan consectetur arcu, ut porttitor nunc auctor non. Etiam mattis dapibus viverra. Nulla eget nisl et enim tincidunt bibendum. 
+                            Aliquam non volutpat nunc. Fusce vel ornare urna. Ut luctus magna magna. Sed nec lorem efficitur, blandit velit sit amet, porttitor est. Fusce interdum iaculis venenatis. 
+                            Mauris ultricies mi nulla, vitae faucibus tortor viverra sed. Mauris nec turpis tellus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+
+
+    <!-- js -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
