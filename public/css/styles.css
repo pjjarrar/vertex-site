@@ -5,7 +5,31 @@
 }
 
 body {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 200px;
+    width: 100%;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: grey;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.dropdown>.dropdown-menu {
+    background-color: white;
+    border: none;
+    border-radius: 0;
+}
+
+.bi-grid {
+    font-size: 1.5rem;
 }
 
 a{
@@ -16,16 +40,12 @@ a{
 
 .my-button {
     border: none;
-    background-color: lightblue;
-    padding: .8em 1.5em;
-    border-radius: 100px;
     color: white;
-    font-size: 1.2em;
     transition: 150ms ease;
 }
 
 .my-button:hover {
-    scale: 2;
+    scale: 1.1;
 }
 
 .topbar a{
