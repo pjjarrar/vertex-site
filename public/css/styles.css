@@ -17,6 +17,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    transition: var(--transition);
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -32,8 +37,22 @@ img {
     box-shadow: var(--box-shadow);
 }
 
-a {
-    text-decoration: none;
+/* image zoom  */
+.image-zoom {
+    position: relative;
+    overflow: hidden;
+}
+.image-zoom-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-zoom-wrapper img {
+    transition: var(--transition);
+}
+
+.image-zoom:hover .image-zoom-wrapper img{
+    transform: scale(1.1);
 }
 
 /* top bar  */
@@ -195,10 +214,11 @@ a {
     font-size: 34px;
     flex: none;
 }
-.icon-box:hover {
+
+/* .icon-box:hover {
     transform: rotate(360deg);
     transition: all 0.3s ease;
-}
+} */
 
 /*** About Cont. Start ------------------------------------------------------ ***/
 .about-cont {
@@ -317,7 +337,44 @@ a {
     background-position: center;
     /* background-repeat: no-repeat; */
     background-size: cover;
+    /* color: white; */
+}
+
+.quote-name {
+    border-radius: 10%;
+}
+
+/* projects ----------------------------------------------- */
+
+.project-item .icon-box {
+    background-color: #E47E3B;
     color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.project-item:hover .icon-box {
+    opacity: 1;
+    top: 50%;
+}
+
+/* review  */
+
+.review-head {
+    position: relative;
+}
+
+.review-head::after {
+    content: "";
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    bottom: -14;
+    background-color: white;
+    transform: rotate(45deg);
 }
 
 
