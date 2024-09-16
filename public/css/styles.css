@@ -2,6 +2,8 @@
 
 
 :root {
+    --primary-color: #E47E3B;
+    --primary-color-rgb: rgb(228, 126, 59);
     --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
     --transition: all 0.5s ease;
 }
@@ -22,12 +24,25 @@ img {
 }
 
 .section-padding {
-    padding-top: 140px;
-    padding-bottom: 140px;
+    padding-top: 50px; /* was originally 140 */
+    padding-bottom: 50px; /* was originally 140 */
 }
 
 a {
     text-decoration: none;
+}
+
+/* top bar  */
+.topbar a{
+    color: white;
+}
+
+.topbar {
+    height: 40px;
+}
+
+.small-txt {
+    color: white;
 }
 
 /* navbar -------------------------------------------------- */
@@ -59,17 +74,36 @@ a {
     font-size: 2rem;
 }
 
-/* top bar  */
-.topbar a{
-    color: white;
+/* subtitle ------------------------------------------------------------------- */
+.sub-title {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #000000;
 }
 
-.topbar {
-    height: 40px;
+.sub-title::before {
+    content: "";
+    width: 100px;
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-bottom: -8px;
+    margin-right: -100px;
+    border: 1px solid var(--bs-secondary) !important;
 }
 
-.small-txt {
-    color: white;
+.sub-title::after {
+    content: "";
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    margin-top: -6px;
+    margin-right: -50px;
+    border: 1px solid var(--bs-primary) !important;
 }
 
 /* hero -------------------------------------------------------------- */
@@ -107,7 +141,127 @@ a {
     }
 }
 
+/* about ----------------------------------------------------------------- */
 
+#about p {
+    /* font-size: 12px; */
+}
+
+/* section-title  */
+.section-title {
+    margin-bottom: 60px;
+}
+
+.section-title .line {
+    width: 60px;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin: 16px auto 24px auto;
+}
+
+.section-title .line-small{
+    width: 30px;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin: -10px auto 24px auto;
+}
+
+.section-title p {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 800px) {
+    .phone-marg-top {
+        margin-top: 40px;
+    }
+  }
+
+/* icon-box ---------------------------------------------------------------- */
+
+.icon-box {
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(228, 126, 59, .2);
+    color: var(--primary-color);
+    font-size: 34px;
+    flex: none;
+}
+.icon-box:hover {
+    transform: rotate(360deg);
+    transition: all 0.3s ease;
+}
+
+/*** About Cont. Start ***/
+.about-cont {
+    background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, 0.8)), url(../img/breadcrums.JPEG);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.about-cont .counter {
+    position: relative;
+    text-align: center;
+    width: 300px;
+    min-height: 215px;
+    padding: 10px 15px;
+    margin: 0 auto;
+    border-radius: 30px;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.2);
+    background: var(--bs-white);
+}
+
+.about-cont .counter:before {
+    content: "";
+    position: absolute;
+    height: 105px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 10px 10px 0 0;
+    background-color: var(--bs-primary);
+    
+}
+.about-cont .counter .counter-icon-inner {
+    color: black;
+}
+.about-cont .counter .counter-icon {
+    position: relative;
+    margin: auto;
+    border-radius: 10px 10px 0 0;
+    font-size: 50px;
+    line-height: 90px;
+    color: var(--bs-secondary);
+}
+
+.about-cont .counter:hover .counter-icon i {
+    transform: rotate(360deg);
+    transition: all 0.3s ease;
+}
+.about-cont .counter h3 {
+    color: var(--bs-primary);
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+}
+
+.about-cont .counter .btn-magnify {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1200px) {
+    .counter-facts .counter { margin-bottom: 40px; 
+    }
+}
+/*** About Cont. End ***/
 
 
 
