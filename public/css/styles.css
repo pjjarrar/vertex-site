@@ -28,6 +28,10 @@ img {
     padding-bottom: 50px; /* was originally 140 */
 }
 
+.theme-shadow {
+    box-shadow: var(--box-shadow);
+}
+
 a {
     text-decoration: none;
 }
@@ -196,7 +200,7 @@ a {
     transition: all 0.3s ease;
 }
 
-/*** About Cont. Start ***/
+/*** About Cont. Start ------------------------------------------------------ ***/
 .about-cont {
     background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, 0.8)), url(../img/breadcrums.JPEG);
     background-size: cover;
@@ -212,7 +216,7 @@ a {
     min-height: 215px;
     padding: 10px 15px;
     margin: 0 auto;
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow: 0 8px 5px rgba(0, 0, 0, 0.2);
     background: var(--bs-white);
 }
@@ -254,6 +258,7 @@ a {
 }
 
 .about-cont .counter .btn-magnify {
+    margin-top: 10px;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -263,7 +268,57 @@ a {
 }
 /*** About Cont. End ***/
 
+/* service ------------------------------------------------------------------- */
 
+.service {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.service::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background: rgba(228, 126, 59, 0.2);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    visibility: hidden;
+    transition: var(--transition);
+}
+
+.service:hover::after {
+    visibility: visible;
+    width: 100%;
+    height: 100%;
+    background: var(--bs-primary);
+    z-index: -1;
+
+}
+
+.service:hover h5,
+.service:hover p {
+    color: white;
+}
+
+.service:hover .icon-box {
+    background-color: rgba(225, 225, 225, 0.2);
+    color: white;
+}
+
+.service:hover .btn {
+    background-color: rgba(225, 225, 225, 0.2);
+}
+
+/* quote -------------------------------------------------- */
+#quote {
+    background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, 0.8)), url(../img/breadcrums.JPEG);
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    color: white;
+}
 
 
 /* ANIMAIONS --------------------------------------------------------------- */
