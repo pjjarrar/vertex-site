@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+
+    <!-- * built and designed by WeGo Technologies * -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -38,15 +42,16 @@
     </div>
     
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg py-4 py-lg-0 shadow ">
-        <div class="container-fluid px-4">
+    <nav class="navbar navbar-expand-lg py-4 py-lg-0 navbar-light shadow sticky-top">
+        <div class="container-fluid px-2">
             <img src="img/brand-logo.png" alt="">
+
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#top-navbar" aria-controls="top-navbar">
                 <i class="bi bi-grid"></i>
             </button>
             
             <div class="offcanvas offcanvas-end" tabindex="-1" id="top-navbar" aria-labelledby="top-navbarLabel">
-                <!-- navbar content -->
+                
                 <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#top-navbar" aria-controls="top-navbar">
                     <div class="d-flex justify-content-between p-3">
                         <img src="img/brand-logo.png" alt="">
@@ -56,11 +61,11 @@
 
                 <ul class="navbar-nav ms-lg-auto p-4 p-lg-0">
                     <li class="nav-item px-3 mx-2 px-lg-0 py-1 py-lg-4">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link active" href="#hero">Home</a>
                     </li>
                     <li class="nav-item px-3 mx-2 px-lg-0 py-1 py-lg-4 dropdown">
-                        <a class="nav-link dropdown-toggle" href="#services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Services
+                        <a href="#services" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="">Services</span>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Concrete Scanning</a></li>
@@ -84,8 +89,11 @@
             </div>
         </div>
     </nav>
-    <!-- navbar -->
+   
     
+    <!-- navbar -->
+
+
 
     <!-- Hero -->
     <section id="hero" class="min-vh-100 d-flex align-items-center text-center">
@@ -122,7 +130,7 @@
             </div>
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-6">
-                    <img src="img/about-3.JPEG" alt="">
+                    <img src="img/about-3.JPEG" class="img-round theme-shadow" alt="">
                 </div>
                 <div class="col-lg-5 phone-marg-top">
                     <h1>About The Company</h1>
@@ -158,56 +166,80 @@
         </div>
     </section>
 
-    <!-- about cont. -->
-    <section id="about-cont" class="border-top">
-        <div class="container-fluid about-cont py-5">
-            <div class="container py-5">
-                <div class="row g-4">
-                    <div class="col-lg-4 col-sm-4 col-md-6 fadeInUp" data-wow-delay="0.1s">
-                        <div class="counter">
-                            <div class="counter-icon d-flex">
-                                <i class="bi bi-globe-americas counter-icon-inner text-white"></i>
-                                <h3 class="pt-4 text-white">Subsurface Utility Locating</h3>
-                            </div>
+
+    <!-- quote  -->
+    <section id="quote" class="section-padding border-top mt-4">
+        <div class="container align-items-center justify-content-center">
+
+            <div class="row gy-5 gx-4">
+                <div class="col-lg-12 col-sm-6">
+                    <div class="review">
+                        <div class="review-head p-4 bg-white theme-shadow">
                             <div>
-                                <div class="d-flex align-items-center justify-content-center pt-4">
-                                    <button class="btn btn-primary btn-magnify">Learn more</button>
-                                </div>
+                                <i class="bi bi-chat-right-quote-fill"></i>
+                                <p>"I founded Vertex GPR in 2018 with the goal of creating a concrete scanning and utility locating company that provided a unique experience for the customer. I like to think of us as a company tailored to our customer’s needs and I believe that this approach has succeeded. Vertex GPR currently stands at a concrete scanning accuracy rate of 100% and a utility locating strike mitigation rate of 99.7%."</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-4 col-md-6 fadeInUp" data-wow-delay="0.1s">
-                        <div class="counter">
-                            <div class="counter-icon d-flex">
-                                <i class="bi bi-globe-americas counter-icon-inner text-white"></i>
-                                <h3 class="pt-4 text-white">Subsurface Utility Locating</h3>
-                            </div>
-                            <div>
-                                <div class="d-flex align-items-center justify-content-center pt-4">
-                                    <button class="btn btn-primary btn-magnify">Learn more</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-4 col-md-6 fadeInUp" data-wow-delay="0.1s">
-                        <div class="counter">
-                            <div class="counter-icon d-flex">
-                                <i class="bi bi-globe-americas counter-icon-inner text-white"></i>
-                                <h3 class="pt-4 text-white">Subsurface Utility Locating</h3>
-                            </div>
-                            <div>
-                                <div class="d-flex align-items-center justify-content-center pt-4">
-                                    <button class="btn btn-primary btn-magnify">Learn more</button>
-                                </div>
+                        <div class="review-person mt-4 d-flex align-items-center">
+                            <div class="quote-name ms-3 bg-white p-4">
+                                <h5>Tyler Zachman</h5>
+                                <small>Owner</small>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 
-
+    <!-- About  -->
+    <section id="about-two" class="section-padding">
+        <div class="container">
+            <!-- <div class="row">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold">About</h1>
+                            <div class="line"></div>
+                            <div class="line-small"></div>
+                            <h5>Vertex GPR a Houston Based Company</h5>
+                    </div>
+                </div>
+            </div> -->
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-5 phone-marg-top">
+                    <h5 class="sub-title p-4 ">Comprehensive Approach Strategy</h5>
+                    <p class="mt-3 mb-4"> <b><em>Vertex GPR</em></b> believes all projects should be driven by a clear and direct objective. Part of our strategy it is crucial to understand four aspects. 
+                        <ul>
+                            <li>What needs to be located?</li>
+                            <li>Why does it need to be located?</li>
+                            <li>What is the overall goal?</li>
+                            <li>What is your expected outcome?</li>
+                        </ul>
+                        <br>
+                        <br>
+                    </p>
+                    <div class="d-flex mb-3">
+                        <div>
+                            <p> These simple points are the foundation upon which successful projects are built. The more Vertex GPR understands these points the better the outcome. Improved results can include the following:</p>
+                            <ul>
+                                <li>A safer work environment</li>
+                                <li>Effective results</li>
+                                <li>Decreased onsite time</li>
+                                <li>Decreased or no standby time</li>
+                                <li>Proper reporting</li>
+                                <li>Less site visits</li>
+                                <li>Reduction in overall costs</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="img/projects/IMG_8651.JPEG" class="img-round theme-shadow" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- services -->
 
@@ -255,31 +287,68 @@
         </div>
     </section>
 
-    <!-- quote  -->
-    <section id="quote" class="section-padding border-top mt-4">
-        <div class="container align-items-center justify-content-center">
-
-            <div class="row gy-5 gx-4">
-                <div class="col-lg-12 col-sm-6">
-                    <div class="review">
-                        <div class="review-head p-4 bg-white theme-shadow">
+    <!-- about cont. -->
+    <section id="about-cont" class="border-top">
+        <div class="container-fluid about-cont py-5">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <!-- <div class="col-lg-4 col-sm-4 col-md-6 fadeInUp" data-wow-delay="0.1s">
+                        <div class="counter">
+                            <div class="counter-icon d-flex">
+                                <i class="bi bi-globe-americas counter-icon-inner text-white"></i>
+                                <h3 class="pt-4 text-white m-2">Contact</h3>
+                            </div>
                             <div>
-                                <i class="bi bi-chat-right-quote-fill"></i>
-                                <p>"I founded Vertex GPR in 2018 with the goal of creating a concrete scanning and utility locating company that provided a unique experience for the customer. I like to think of us as a company tailored to our customer’s needs and I believe that this approach has succeeded. Vertex GPR currently stands at a concrete scanning accuracy rate of 100% and a utility locating strike mitigation rate of 99.7%."</p>
+                                <div class="d-flex align-items-center justify-content-center pt-4">
+                                    <button class="btn btn-primary btn-magnify">Learn more</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="review-person mt-4 d-flex align-items-center">
-                            <div class="quote-name ms-3 bg-white p-4">
-                                <h5>Tyler Zachman</h5>
-                                <small>Owner</small>
+                    </div> -->
+                    <div class="col-md-4 col-lg-4 fadeInUp">
+                        <div class="bg-white text-center p-4 theme-shadow feature-item" style="border-radius: 10%;">
+                            <div class="counter-icon feature-icon p-3">
+                                <i class="bi bi-telephone fa-4x text-primary"></i>
+                            </div>
+                            <div class="feature-content d-flex flex-column">
+                                <h5 class="mb-3">Contact</h5>
+                                <p class="mb-3">To learn more about whether <strong><em>Vertex GPR</em></strong> is right for your project, please call us directy at 832 - 707 - 1585 or email us at info@vertexgpr.com.</p>
+                               <br>
+                                <a class="btn btn-primary rounded-pill text-white" href="#">Learn More<i class="fas fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 fadeInUp">
+                        <div class="bg-white text-center p-4 theme-shadow" style="border-radius: 10%;">
+                            <div class="counter-icon feature-icon p-3 ">
+                                <i class="bi bi-pen fa-4x text-primary"></i>
+                            </div>
+                            <div class="feature-content d-flex flex-column">
+                                <h5 class="mb-3">Proposal</h5>
+                                <p class="mb-3">Our estimating process is tilored to your needs. Once we understand what you are trying to accomplish, a proposal outlining the scope of work will be emails to you.</p>
+                                <br>
+                                <a class="btn btn-primary rounded-pill text-white" href="#">Learn More<i class="fas fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 fadeInUp">
+                        <div class="bg-white text-center p-4 theme-shadow" style="border-radius: 10%;">
+                            <div class="counter-icon feature-icon p-3">
+                                <i class="bi bi-wrench-adjustable fa-4x text-primary"></i>
+                            </div>
+                            <div class="feature-content d-flex flex-column">
+                                <h5 class="mb-3">Scheduling</h5>
+                                <p class="mb-3">At <strong><em>Vertex GPR</em></strong>, we understand that many projects are time sensitive. We have created a streamlined scheduling system with a single point of contact to ensure a smooth process.</p>
+                                <a class="btn btn-primary rounded-pill text-white" href="#">Learn More<i class="fas fa-arrow-right ms-2"></i></a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
+
+
 
     <!-- projects  -->
      <section id="projects" class="section-padding">
@@ -385,7 +454,9 @@
         </div>
      </section>
 
-     <section id="reviews" class="section-padding bg-light">
+
+     <!-- review/testimonials  -->
+     <!-- <section id="reviews" class="section-padding bg-light">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -417,7 +488,107 @@
                 </div>
             </div>
         </div>
-     </section>
+     </section> -->
+
+     <!-- contact  -->
+
+     <div class="section-padding" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="section-title">
+                        <h1 class="display-4 fw-semibold text-dark">Lets get in touch.</h1>
+                            <div class="line bg-dark"></div>
+                            <div class="line-small bg-dark"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form action="#" class="row g-3 p-lg-5 p-4 bg-white theme-shadow">
+                        <div class="form-group col-lg-6">
+                            <input type="text" class="form-control" placeholder="Enter first name">
+                        </div>
+                        <div class="form-group col-lg-6">
+                            <input type="text" class="form-control" placeholder="Enter last name">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <input type="email" class="form-control" placeholder="Enter email address">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <input type="text" class="form-control" placeholder="Enter subject">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <textarea name="message" rows="5" class="form-control" placeholder="Enter message"></textarea>
+                        </div>
+                        <div class="form-group col-lg-12 d-grid">
+                            <button class="btn btn-primary text-white">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- footer  -->
+
+     <footer class="bg-dark">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="#"><img src="" alt="">Logo</a>
+                        <div class="line"></div>
+                        <p class="text-white mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, laudantium.</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.facebook.com/p/Vertex-GPR-100083068311469/?_rdr"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.linkedin.com/company/vertex-gpr-llc/"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="text-white mb-0">Services</h5>
+                        <div class="line"></div>
+                        <ul class="text-white">
+                            <li><a href="#">Concrete Scanning</a></li>
+                            <li><a href="#">Utility Locating</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="text-white mb-0">About</h5>
+                        <div class="line"></div>
+                        <ul class="text-white">
+                            <li><a href="#">Concrete Scanning</a></li>
+                            <li><a href="#">Utility Locating</a></li>
+                            <li><a href="#">Concrete Scanning</a></li>
+                            <li><a href="#">Utility Locating</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="text-white mb-0">Contact Us</h5>
+                        <div class="line"></div>
+                        <ul class="text-white">
+                            <li><a href="#">(832) - 707 - 1585</a></li>
+                            <li><a href="#">info@vertexgpr.com</a></li>
+                        </ul>
+                    </div>       
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-white">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">
+                            © Copyright Vertex GPR. All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </footer>
+
 
 
 
@@ -425,5 +596,6 @@
     <!-- js -->
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/dropdown.js"></script>
 </body>
 </html>
