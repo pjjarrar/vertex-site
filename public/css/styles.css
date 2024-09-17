@@ -9,6 +9,10 @@
     --transition: all 0.5s ease;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 
 *{
     box-sizing: border-box;
@@ -34,8 +38,8 @@ img {
 }
 
 .section-padding {
-    padding-top: 50px; /* was originally 140 */
-    padding-bottom: 50px; /* was originally 140 */
+    padding-top: 100px; /* was originally 140 */
+    padding-bottom: 100px; /* was originally 140 */
 }
 
 .theme-shadow {
@@ -75,9 +79,64 @@ img {
 
 /* navbar -------------------------------------------------- */
 
-.nav-link {
-    font-weight: 500;
-    color: grey;
+
+
+    /* the underline for the navbar  */
+@media only screen and (min-width: 1200px) {
+
+    .nav-link {
+        position: relative;
+    }
+    
+    .nav-link::after {
+        content: "";
+        opacity: 0;
+        transition: all .5s;
+        height: 2px;
+        width: 100%;
+        background-color: var(--primary-color);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .nav-link:hover::after {
+        opacity: 1;
+    }
+    
+    .nav-link.active::after {
+        content: "";
+        opacity: 1;
+        transition: all .5s;
+        height: 2px;
+        width: 100%;
+        background-color: var(--primary-color);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    
+  }
+
+  .hidden-nav-item {
+    visibility: hidden;
+  }
+
+
+/* Styles for tablets */
+@media only screen and (max-width: 991px) {
+
+    .schedule-btn {
+        visibility: hidden;
+    }
+    .hidden-nav-item {
+        visibility: visible;
+    }
+}
+  
+/* Styles for smartphones */
+@media only screen and (max-width: 767px) {
+/* ... */
 }
 
 .navbar-nav .nav-link.active {
@@ -108,7 +167,6 @@ img {
 
 .sticky-top {
     background-color: white;
-    
 }
 
 
@@ -261,10 +319,10 @@ img {
     flex: none;
 }
 
-/* .icon-box:hover {
+.counter-icon:hover {
     transform: rotate(360deg);
     transition: all 0.3s ease;
-} */
+}
 
 /*** About Cont. Start ------------------------------------------------------ ***/
 .about-cont {
@@ -326,6 +384,18 @@ img {
 .about-cont .counter .btn-magnify {
     margin-top: 10px;
     box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* about two------------------------------------------------------------------ */
+
+.feature-item {
+    transition: var(--transition);
+}
+
+.feature-item:hover {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -424,6 +494,17 @@ img {
     transform: rotate(45deg);
 }
 
+/* photos section */
+
+.carousel-item img {
+    aspect-ratio: 16 / 9; /* Adjust the aspect ratio as needed */
+    object-fit: cover;
+}
+
+.carousel-btn {
+    color: var(--bs-primary);
+}
+
 /* contact us ----------------------------------------------------------------- */
 
 #contact {
@@ -463,7 +544,7 @@ img {
 
 .fade-in {
     opacity: 0;
-    animation: fadeIn 2s ease-in-out forwards;
+    animation: fadeIn .8s ease-in-out forwards;
   }
   
 @keyframes fadeIn {
