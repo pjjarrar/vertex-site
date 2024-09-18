@@ -26,7 +26,7 @@
 <body data-bs-spy="scroll" data-bs-target=".navbar">
 
     <!-- top bar -->
-    <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+    <div class="container-fluid bg-primary px-5 d-none d-lg-block p-1">
         <div class="row gx-0 align-items-center topbar">
             <div class="col-lg-5 text-center text-lg-start mb-lg-0">
                 <div class="d-flex">
@@ -34,10 +34,19 @@
                     <a href="#" class="me-0"><i class="fas fa-phone-alt me-2"></i>832.707.1585</a>
                 </div>
             </div>
-            <div class="col-lg-6 text-center text-lg-end">
+            <div class="col-lg-3 row-cols-1 text-center mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center social-icons mt-0" style="height: 45px;">
+                    <a class="me-2" href=""><i class="fab fa-twitter fw-normal text-white"></i></a>
+                    <a class="me-2" href=""><i class="fab fa-facebook-f fw-normal text-white"></i></a>
+                    <a class="me-2" href=""><i class="fab fa-linkedin-in fw-normal text-white"></i></a>
+                    <a class="me-2" href=""><i class="fab fa-instagram fw-normal text-white"></i></a>
+                    <a class="" href=""><i class="fab fa-youtube fw-normal text-white"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
                 <div class="d-inline-flex align-items-center">
-                    <a href="#" class="me-2"> Help</a><small class="small-txt"> / </small>
-                    <a href="#" class="mx-2"> Support</a><small class="small-txt"> / </small>
+                    <!-- <a href="#" class="me-2"> Help</a><small class="small-txt"> / </small> -->
+                    <a href="#espanol" onclick="showSection()" class="mx-2"> Español</a><small class="small-txt"> / </small>
                     <a href="#" class="ms-2"> Contact</a>
                 </div>
             </div>
@@ -47,7 +56,8 @@
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg py-4 py-lg-0 navbar-light shadow sticky-top">
         <div class="container-fluid px-2">
-            <img src="img/brand-logo.png" alt="">
+            <a href="#"><img src="img/brand-logo.png" alt=""></a>
+            
 
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#top-navbar" aria-controls="top-navbar">
                 <i class="bi bi-grid"></i>
@@ -87,16 +97,16 @@
                     <li class="nav-item px-3 mx-2 px-lg-0 py-1 py-lg-4">
                         <a class="nav-link" href="#projects">Photos</a>
                     </li>
-                    <li class="nav-item px-3 mx-2 px-lg-0 py-1 py-lg-4">
-                        <a class="nav-link" href="#">Español</a>
-                    </li>
-                    <li class="nav-item px-3 mx-2 px-lg-0 py-1 py-lg-4">
-                        <a href="#contact" class="btn btn-primary rounded-pill btn-magnify schedule-btn">Schedule Service</a>
-                    </li>
-                    <hr>
                     <li class="nav-item px-3 mx-2 px-lg-0 py-1 py-lg-4 hidden-nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
+                    <li class="nav-item px-3 mx-2 px-lg-0 py-1 py-lg-4 hidden-nav-item">
+                        <a class="nav-link" href="#espanol" onclick="showSection()">Español</a>
+                    </li>
+                    <li class="nav-item px-3 mx-2 px-lg-0 py-1 py-lg-4">
+                        <a href="#contact" class="btn btn-primary rounded-pill schedule-btn text-white">Schedule Service</a>
+                    </li>
+
 
                 </ul>
                 
@@ -123,7 +133,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="btn btn-primary my-4 btn-magnify" data-aos="fade-up" data-aos-duration="1000"><a href="#about" class="text-white">More Details</a></button>
+                    <button class="btn btn-primary my-4 rounded-pill btn-magnify" data-aos="fade-up" data-aos-duration="1000"><a href="#about" class="text-white">More Details</a></button>
                 </div>
             </div>
         </div>
@@ -143,15 +153,16 @@
                 </div>
             </div>
             <div class="row justify-content-between align-items-center">
-                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+
+                <div class="col-lg-6 col-md-12" data-aos="fade-right" data-aos-duration="1000">
                     <img src="img/about-3.JPEG" class="img-round theme-shadow" alt="">
                 </div>
-                <div class="col-lg-5 phone-marg-top" data-aos="fade-left" data-aos-duration="1000">
+
+                <div class="col-lg-6 col-md-12 phone-marg-top" data-aos="fade-left" data-aos-duration="1000">
                     <h1 >About The Company</h1>
                     <p class="mt-3 mb-4"> <b><em>Vertex GPR</em></b> is dedicated to providing our customers with the top tier industry experience. Whether your project is in need of concrete scanning or a subsurface utility locate, 
                         we are confident that our commitment, knowledge and proactive approach will put you one step closer to a successful project. 
-                        <br>
-                        <br>
+
                     </p>
                     <div class="d-flex pt-4 mb-3">
                         <div class="icon-box me-4">
@@ -186,7 +197,7 @@
         <div class="container align-items-center justify-content-center">
 
             <div class="row gy-5 gx-4">
-                <div class="col-lg-12 col-sm-6">
+                <div class="col-lg-12">
                     <div class="review">
                         <div class="review-head p-4 bg-white theme-shadow" data-aos="fade-down" data-aos-duration="1000">
                             <div>
@@ -222,7 +233,7 @@
             </div> -->
             <div class="row justify-content-between align-items-center">
                 <div class="col-lg-5 phone-marg-top" data-aos="fade-right" data-aos-duration="1000">
-                    <h4 class="sub-title p-4 ">Comprehensive Approach Strategy</h4>
+                    <h2 class="">Comprehensive Approach Strategy</h2>
                     <p class="mt-3 mb-4"> <b><em>Vertex GPR</em></b> believes all projects should be driven by a clear and direct objective. Part of our strategy it is crucial to understand four aspects. 
                         <ul>
                             <li>What needs to be located?</li>
@@ -271,7 +282,7 @@
             </div>
 
             <div class="row text-center">
-                <div class="col-lg-6 col-sm-6" id="#subsurface-locating" data-aos="fade-right" data-aos-duration="1000">
+                <div class="col-lg-6 col-md-12" id="#subsurface-locating" data-aos="fade-right" data-aos-duration="1000">
                     <div class="service theme-shadow p-lg-5 p-4">
                         <div class="icon-box">
                             <i class="bi bi-globe-americas"></i>
@@ -280,11 +291,11 @@
                         <p>Vertex GPR offers subsurface utility locating services utilizing Ground Penetrating Radar and Electromagnetic Detection.
                         </p>
                         <div class="d-flex align-items-center justify-content-center pt-4">
-                            <button class="btn btn-primary btn-magnify">Learn more</button>
+                            <button class="btn btn-primary btn-magnify"data-bs-toggle="modal" data-bs-target="#subsurfaceUtility">More Information</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-sm-6" id="concrete-scanning" data-aos="fade-left" data-aos-duration="1000">
+                <div class="col-lg-6 col-md-12 medium-margin-top" id="concrete-scanning" data-aos="fade-left" data-aos-duration="1000">
                     <div class="service theme-shadow p-lg-5 p-4">
                         <div class="icon-box">
                             <i class="bi bi-bar-chart"></i>
@@ -292,7 +303,7 @@
                         <h5 class="mt-4 mb-3">Concrete Scanning</h5>
                         <p>Concrete scanning is essential for locating components that are critical in nature to a structure’s integrity.</p>
                         <div class="d-flex align-items-center justify-content-center pt-4">
-                            <button class="btn btn-primary btn-magnify">Learn more</button>
+                            <button type="button" class="btn btn-primary btn-magnify" data-bs-toggle="modal" data-bs-target="#concreteScanning">More Information</button>
                         </div>
                     </div>
                 </div>
@@ -300,47 +311,652 @@
 
         </div>
     </section>
+    <!-- end services  -->
+    
+    <!-- CONCRETE SCANNING MODAL  -->
+    <div class="modal fade" id="concreteScanning" tabindex="-1" aria-labelledby="concreteScanningLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="concreteScanningLabel">Concrete Scanning</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body faq-section">
+
+                <div class="container section-padding bg-white shadow p-3">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div class="section-title" data-aos="fade-down" data-aos-duration="1000">
+                                <h1 class="display-4 fw-semibold">Services</h1>
+                                    <div class="line"></div>
+                                    <div class="line-small"></div>
+                                    <h5>Precision and Accuracy in Every Project</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between align-items-center pb-3">
+        
+                        <div class="col-lg-6 col-md-12" data-aos="fade-right" data-aos-duration="1000">
+                            <img src="img/projects/GOPR0553_Moment5.jpg" class="img-round theme-shadow" alt="">
+                        </div>
+        
+                        <div class="col-lg-6 col-md-12 phone-marg-top" data-aos="fade-left" data-aos-duration="1000">
+                            <h1 >Concrete Scanning</h1>
+                            <p class="mt-3 mb-4">Concrete scanning is essential for locating components that are critical in nature to a structure’s integrity.
+                                <br>
+                                <br>
+                                When your project requires demolition of any type, it is critical to know the location of post-tension cables, conduits and structural
+                                reinforcing. Having this informationn in real-time ensures safer working conditions and greater strike reduction.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-4 section-padding bg-white shadow p-3">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div class="section-title" data-aos="fade-down" data-aos-duration="1000">
+                                <h1 class="display-4 fw-semibold">FAQ</h1>
+                                    <div class="line"></div>
+                                    <div class="line-small"></div>
+                                    <h5>Frequently asked Questions</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between align-items-center ">
+
+                        <!-- faq question start  ANOTHER OPTION FOR FAQ -->
+                        <!-- <div class="col-lg-12 col-md-12 phone-marg-top" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="d-flex pt-4 mb-3">
+                                <div class="icon-box me-4 faq-item">
+                                    <i class="bi bi-question-circle-fill"></i>
+                                </div>
+                                <div>
+                                    <h5><b><em>How Does GPR Work?</em></b></h5>
+                                    <p>Ground Penetrating Radar (GPR) often referred to as Concrete Scanning or Concrete X-ray,
+                                        works by sending a pulse of energy into concrete and measuring the strength and time of the returning signal.
+                                         The equipment will repeat this action multiple times as the unit is maneuvered across a surface and process the 
+                                         returning data points. This processed data will then appear on the operating system’s monitor and is interpreted by the 
+                                         GPR Operator</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="icon-box me-4 faq-item">
+                                    <i class="bi bi-question-circle-fill"></i>
+                                </div>
+                                <div>
+                                    <h5><b><em>How Long Does Data Processing Take?</em></b></h5>
+                                    <p>Findings are collected in real time. This means there is no post job processing that needs to be completed. 
+                                        A GPR Operator can mark out findings as they go along, allowing for timely decisions.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="icon-box me-4 faq-item">
+                                    <i class="bi bi-question-circle-fill"></i>
+                                </div>
+                                <div>
+                                    <h5><b><em>How Are Findings Noted?</em></b></h5>
+                                    <p>Once an area is scanned the findings will be marked directly on the surface. This can be done with spray paint, or lumber crayon. 
+                                        If items can be categorized they will be color coded and labeled. Reports of findings can also be created.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="icon-box me-4 faq-item">
+                                    <i class="bi bi-question-circle-fill"></i>
+                                </div>
+                                <div>
+                                    <h5><b><em>Is GPR Safe?</em></b></h5>
+                                    <p>Yes, GPR is completely safe to operate around people. The frequency emissions are less than that of a smart phone.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="icon-box me-4 faq-item">
+                                    <i class="bi bi-question-circle-fill"></i>
+                                </div>
+                                <div>
+                                    <h5><b><em>How Mobile Is The Equipment?</em></b></h5>
+                                    <p>The equipment is very compact and mobile. Most surfaces can be scanned as long as the area is relatively smooth and dry.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="icon-box me-4 faq-item">
+                                    <i class="bi bi-question-circle-fill"></i>
+                                </div>
+                                <div>
+                                    <h5><b><em>How Accurate Is GPR?</em></b></h5>
+                                    <p>When scanning concrete, GPR has an accuracy of approximately +/- a quarter of an inch horizontally 
+                                        from the center of the item and one-half inch vertically from the surface of the scan to the top of the item.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="icon-box me-4 faq-item">
+                                    <i class="bi bi-question-circle-fill"></i>
+                                </div>
+                                <div>
+                                    <h5><b><em>Is GPR Noisy?</em></b></h5>
+                                    <p>No, GPR is very quiet to operate.</p>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- faq questions end  -->
+
+                        <!-- accordian start  -->
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    <div class="icon-box me-4 faq-item">
+                                        <i class="bi bi-question-circle-fill"></i>
+                                    </div>
+                                    How Does GPR Work?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                <p>Ground Penetrating Radar (GPR) often referred to as Concrete Scanning or Concrete X-ray,
+                                    works by sending a pulse of energy into concrete and measuring the strength and time of the returning signal.
+                                    The equipment will repeat this action multiple times as the unit is maneuvered across a surface and process the 
+                                    returning data points. This processed data will then appear on the operating system’s monitor and is interpreted by the 
+                                    GPR Operator.</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    <div class="icon-box me-4 faq-item">
+                                        <i class="bi bi-question-circle-fill"></i>
+                                    </div>
+                                    How Long Does Data Processing Take?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <p>Findings are collected in real time. This means there is no post job processing that needs to be completed. 
+                                        A GPR Operator can mark out findings as they go along, allowing for timely decisions.</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    <div class="icon-box me-4 faq-item">
+                                        <i class="bi bi-question-circle-fill"></i>
+                                    </div>
+                                    How Are Findings Noted?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <p>Once an area is scanned the findings will be marked directly on the surface. This can be done with spray paint, or lumber crayon. 
+                                        If items can be categorized they will be color coded and labeled. Reports of findings can also be created.</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                    <div class="icon-box me-4 faq-item">
+                                        <i class="bi bi-question-circle-fill"></i>
+                                    </div>
+                                    Is GPR Safe?
+                                </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Yes, GPR is completely safe to operate around people. The frequency emissions are less than that of a smart phone.
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                                    <div class="icon-box me-4 faq-item">
+                                        <i class="bi bi-question-circle-fill"></i>
+                                    </div>
+                                    How Mobile Is The Equipment?
+                                </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    The equipment is very compact and mobile. Most surfaces can be scanned as long as the area is relatively smooth and dry.
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                                    <div class="icon-box me-4 faq-item">
+                                        <i class="bi bi-question-circle-fill"></i>
+                                    </div>
+                                    How Accurate Is GPR?
+                                </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    When scanning concrete, GPR has an accuracy of approximately +/- a quarter of an inch horizontally from the center of the item and one-half inch vertically from the surface of the scan to the top of the item.
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+                                    <div class="icon-box me-4 faq-item">
+                                        <i class="bi bi-question-circle-fill"></i>
+                                    </div>
+                                    Is GPR Noisy?
+                                </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    No, GPR is very quiet to operate.
+                                </div>
+                                </div>
+                            </div>
+                        </div>   
+                        <!-- accordian end  -->
+                        
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end concrete modal  -->
+
+
+      <!-- subsurface utitility locating modal -->
+      <div class="modal fade" id="subsurfaceUtility" tabindex="-1" aria-labelledby="subsurfaceUtilityLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="subsurfaceUtilityLabel">Subsurface Utility Locating</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body faq-section">
+
+              <div class="container section-padding bg-white shadow p-3">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div class="section-title" data-aos="fade-down" data-aos-duration="1000">
+                                <h1 class="display-4 fw-semibold">Services</h1>
+                                    <div class="line"></div>
+                                    <div class="line-small"></div>
+                                    <h5>Precision and Accuracy in Every Project</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between align-items-center pb-3">
+
+                        <div class="col-lg-6 col-md-12 phone-marg-top" data-aos="fade-left" data-aos-duration="1000">
+                            <h1 >Subsurface Utility Locating</h1>
+                            <p class="mt-3 mb-4">Vertex GPR offers subsurface utility locating services utilizing Ground Penetrating Radar (GPR) and Electromagnetic Detection (EM). 
+                                Subsurface utility locating is highly important for soil boring, 
+                                excavation, directional boring, day-lighting, As-Built confirmation, and retrofit design.
+                                <br>
+                                <br>
+                                Subsurface Utilities To Consider Prior To The Start of Your Project:
+                                Electrical, Gas, Communications, Sanitary Sewer, Storm Drains, Steam, Potable Water, Fire Services, and Irrigation.
+                            </p>
+                        </div>
+                        <div class="col-lg-6 col-md-12" data-aos="fade-right" data-aos-duration="1000">
+                            <img src="img/projects/GOPR0553_Moment5.jpg" class="img-round theme-shadow" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-4 section-padding bg-white shadow p-3">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <div class="section-title" data-aos="fade-down" data-aos-duration="1000">
+                                <h1 class="display-4 fw-semibold">FAQ</h1>
+                                    <div class="line"></div>
+                                    <div class="line-small"></div>
+                                    <h5>Frequently asked Questions</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-between align-items-center ">
+                        <!-- faq question start  ANOTHER OPTION FOR FAQ QUESTIONS-->
+                        <!-- <div class="col-lg-12 col-md-12 phone-marg-top" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="d-flex pt-4 mb-3">
+                                <div class="icon-box me-4 faq-item">
+                                    <i class="bi bi-question-circle-fill "></i>
+                                </div>
+                                <div>
+                                    <h5><b><em>How Does GPR Work?</em></b></h5>
+                                    <p>Ground Penetrating Radar (GPR) works by sending a pulse of energy into a material and measuring the strength and time of the returning signal. 
+                                        The equipment will repeat this action multiple times as the unit is maneuvered across a surface and process the returning data points. 
+                                        This processed data will then appear on the operating systems monitor for viewing by the GPR Operator.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="icon-box me-4 faq-item">
+                                    <i class="bi bi-question-circle-fill"></i>
+                                </div>
+                                <div>
+                                    <h5><b><em>How Long Does Data Processing Take?</em></b></h5>
+                                    <p>Findings are collected in real time. This means there is no post job processing that needs to be completed. 
+                                        A GPR Operator can mark out findings as they go along, allowing for timely decisions.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="icon-box me-4 faq-item">
+                                    <i class="bi bi-question-circle-fill"></i>
+                                </div>
+                                <div>
+                                    <h5><b><em>How Are Findings Noted?</em></b></h5>
+                                    <p>Once an area is scanned the findings will be marked directly on the surface. This can be done with spray paint, or lumber crayon. 
+                                        If items can be categorized they will be color coded and labeled. Reports of findings can also be created.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="icon-box me-4 faq-item">
+                                    <i class="bi bi-question-circle-fill"></i>
+                                </div>
+                                <div>
+                                    <h5><b><em>Is GPR Safe?</em></b></h5>
+                                    <p>Yes, GPR is completely safe to operate around people. The frequency emissions are less than that of a smart phone.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="icon-box me-4 faq-item">
+                                    <i class="bi bi-question-circle-fill"></i>
+                                </div>
+                                <div>
+                                    <h5><b><em>How Mobile Is The Equipment?</em></b></h5>
+                                    <p>The equipment is very compact and mobile. Most surfaces can be scanned as long as the area is relatively smooth and dry.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="icon-box me-4 faq-item">
+                                    <i class="bi bi-question-circle-fill"></i>
+                                </div>
+                                <div>
+                                    <h5><b><em>Is GPR Noisy?</em></b></h5>
+                                    <p>No, GPR is very quiet to operate.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="icon-box me-4 faq-item">
+                                    <i class="bi bi-question-circle-fill"></i>
+                                </div>
+                                <div>
+                                    <h5><b><em>How Does EM Work?</em></b></h5>
+                                    <p>Electromagnetic Detection (EM) works by detecting a magnetic field created by an alternating current on an item. 
+                                        Such as an AC electrical line.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="icon-box me-4 faq-item">
+                                    <i class="bi bi-question-circle-fill"></i>
+                                </div>
+                                <div>
+                                    <h5><b><em>Can EM Detect Other Utilites Apart From An Electrical Line?</em></b></h5>
+                                    <p>Yes, EM is able to detect other utilities so long as they contain conductive material or have tracer wires. </p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="icon-box me-4 faq-item">
+                                    <i class="bi bi-question-circle-fill"></i>
+                                </div>
+                                <div>
+                                    <h5><b><em>How Deep Can EM Detect?</em></b></h5>
+                                    <p>The equipment can detect items up to approximately nine feet deep.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="icon-box me-4 faq-item ">
+                                    <i class="bi bi-question-circle-fill"></i>
+                                </div>
+                                <div>
+                                    <h5><b><em>Is EM Safe?</em></b></h5>
+                                    <p>Yes, EM equipment is completely safe to operate around people.</p>
+                                </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                                <div class="icon-box me-4 faq-item">
+                                    <i class="bi bi-question-circle-fill"></i>
+                                </div>
+                                <div>
+                                    <h5><b><em>Is EM Noisy?</em></b></h5>
+                                    <p>No, the equipment can be set to silent if requested.</p>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- faq question end  -->
+
+                        <!-- accordion start  -->
+                        <div class="accordion" id="accordionPanelsStayOpenExample">
+                            <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                    <div class="icon-box me-4 faq-item">
+                                        <i class="bi bi-question-circle-fill"></i>
+                                    </div>
+                                    How Does GPR Work?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                <p>Ground Penetrating Radar (GPR) often referred to as Concrete Scanning or Concrete X-ray,
+                                    works by sending a pulse of energy into concrete and measuring the strength and time of the returning signal.
+                                    The equipment will repeat this action multiple times as the unit is maneuvered across a surface and process the 
+                                    returning data points. This processed data will then appear on the operating system’s monitor and is interpreted by the 
+                                    GPR Operator.</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                                    <div class="icon-box me-4 faq-item">
+                                        <i class="bi bi-question-circle-fill"></i>
+                                    </div>
+                                    How Long Does Data Processing Take?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <p>Findings are collected in real time. This means there is no post job processing that needs to be completed. 
+                                        A GPR Operator can mark out findings as they go along, allowing for timely decisions.</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                                    <div class="icon-box me-4 faq-item">
+                                        <i class="bi bi-question-circle-fill"></i>
+                                    </div>
+                                    How Are Findings Noted?
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <p>Once an area is scanned the findings will be marked directly on the surface. This can be done with spray paint, or lumber crayon. 
+                                        If items can be categorized they will be color coded and labeled. Reports of findings can also be created.</p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                                    <div class="icon-box me-4 faq-item">
+                                        <i class="bi bi-question-circle-fill"></i>
+                                    </div>
+                                    Is GPR Safe?
+                                </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Yes, GPR is completely safe to operate around people. The frequency emissions are less than that of a smart phone.
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                                    <div class="icon-box me-4 faq-item">
+                                        <i class="bi bi-question-circle-fill"></i>
+                                    </div>
+                                    How Mobile Is The Equipment?
+                                </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    The equipment is very compact and mobile. Most surfaces can be scanned as long as the area is relatively smooth and dry.
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                                    <div class="icon-box me-4 faq-item">
+                                        <i class="bi bi-question-circle-fill"></i>
+                                    </div>
+                                    Is GPR Noisy?
+                                </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    No, GPR is very quiet to operate.
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+                                    <div class="icon-box me-4 faq-item">
+                                        <i class="bi bi-question-circle-fill"></i>
+                                    </div>
+                                    How Does EM Work?
+                                </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Electromagnetic Detection (EM) works by detecting a magnetic field created by an alternating current on an item. Such as an AC electrical line.
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
+                                    <div class="icon-box me-4 faq-item">
+                                        <i class="bi bi-question-circle-fill"></i>
+                                    </div>
+                                    Can EM Detect Other Utilites Apart From An Electrical Line?
+                                </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Yes, EM is able to detect other utilities so long as they contain conductive material or have tracer wires.
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
+                                    <div class="icon-box me-4 faq-item">
+                                        <i class="bi bi-question-circle-fill"></i>
+                                    </div>
+                                    How Deep Can EM Detect?
+                                </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    The equipment can detect items up to approximately nine feet deep.
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
+                                    <div class="icon-box me-4 faq-item">
+                                        <i class="bi bi-question-circle-fill"></i>
+                                    </div>
+                                    Is EM Safe?
+                                </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    Yes, EM equipment is completely safe to operate around people.
+                                </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEleven" aria-expanded="false" aria-controls="panelsStayOpen-collapseEleven">
+                                    <div class="icon-box me-4 faq-item">
+                                        <i class="bi bi-question-circle-fill"></i>
+                                    </div>
+                                    Is EM Noisy?
+                                </button>
+                                </h2>
+                                <div id="panelsStayOpen-collapseEleven" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    No, the equipment can be set to silent if requested.
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- accordion end  -->
+
+                    </div>
+                </div> 
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- end modal  -->
 
     <!-- about cont. -->
     <section id="about-cont" class="border-top">
         <div class="container-fluid about-cont py-5">
             <div class="container py-5">
                 <div class="row g-4">
-                    <div class="col-md-4 col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="col-md-12 col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
                         <div class="bg-white text-center p-4 theme-shadow feature-item" style="border-radius: 10%;">
-                            <div class="counter-icon feature-icon p-3">
+                            <div class="counter-icon feature-icon">
                                 <i class="bi bi-telephone fa-4x text-primary"></i>
                             </div>
-                            <div class="feature-content d-flex flex-column">
+                            <div class="feature-content d-flex flex-column p-4">
                                 <h5 class="mb-3">Contact</h5>
                                 <p class="mb-3">To learn more about whether <strong><em>Vertex GPR</em></strong> is right for your project, please call us directy at 832 - 707 - 1585 or email us at info@vertexgpr.com.</p>
                                <br>
-                                <a class="btn btn-primary rounded-pill text-white" href="#">Learn More<i class="fas fa-arrow-right ms-2"></i></a>
+                                <a class="btn btn-primary rounded-pill text-white" href="#contact">Learn More<i class="fas fa-arrow-right ms-2"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-lg-4" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="col-md-12 col-lg-4" data-aos="zoom-in" data-aos-duration="1500">
                         <div class="bg-white text-center p-4 theme-shadow feature-item" style="border-radius: 10%;">
-                            <div class="counter-icon feature-icon p-3 ">
+                            <div class="counter-icon feature-icon">
                                 <i class="bi bi-pen fa-4x text-primary"></i>
                             </div>
-                            <div class="feature-content d-flex flex-column">
+                            <div class="feature-content d-flex flex-column p-4">
                                 <h5 class="mb-3">Proposal</h5>
                                 <p class="mb-3">Our estimating process is tilored to your needs. Once we understand what you are trying to accomplish, a proposal outlining the scope of work will be emails to you.</p>
-                                <br>
-                                <a class="btn btn-primary rounded-pill text-white" href="#">Learn More<i class="fas fa-arrow-right ms-2"></i></a>
+                                <a class="btn btn-primary rounded-pill text-white" href="#contact">Learn More<i class="fas fa-arrow-right ms-2"></i></a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="col-md-12 col-lg-4" data-aos="zoom-in" data-aos-duration="1000">
                         <div class="bg-white text-center p-4 theme-shadow feature-item" style="border-radius: 10%;">
-                            <div class="counter-icon feature-icon p-3">
+                            <div class="counter-icon feature-icon">
                                 <i class="bi bi-wrench-adjustable fa-4x text-primary"></i>
                             </div>
-                            <div class="feature-content d-flex flex-column">
+                            <div class="feature-content d-flex flex-column p-4">
                                 <h5 class="mb-3">Scheduling</h5>
-                                <p class="mb-3">At <strong><em>Vertex GPR</em></strong>, we understand that many projects are time sensitive. We have created a streamlined scheduling system with a single point of contact to ensure a smooth process.</p>
-                                <a class="btn btn-primary rounded-pill text-white" href="#">Learn More<i class="fas fa-arrow-right ms-2"></i></a>
+                                <p class="mb-3">We understand that many projects are time sensitive. We have created a streamlined scheduling system with a single point of contact to ensure a smooth process.</p>
+                                <a class="btn btn-primary rounded-pill text-white" href="#contact">Learn More<i class="fas fa-arrow-right ms-2"></i></a>
                             </div>
                         </div>
                     </div>
@@ -411,7 +1027,7 @@
         </div>
      </section> -->
 
-     <section id="projects" class="section-padding">
+     <section id="projects" class="section-padding border-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
@@ -433,7 +1049,7 @@
                             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
                         
-                        <div class="carousel-inner project-item image-zoom">
+                        <div class="carousel-inner project-item image-zoom frame" data-aos="zoom-in" data-aos-duration="1000">
                             <div class="carousel-item active image-zoom-wrapper">
                                 <img src="./img/projects/20160712_101618.jpg" class="d-block w-100 img-fluid" alt="...">
                                 <a href="./img/projects/20190314_124154.jpg" data-fancybox="gallery" class="icon-box"><i class="bi bi-search"></i></a>
@@ -444,6 +1060,7 @@
                             </div>
                             <div class="carousel-item">
                                 <img src="./img/projects/20190211_102143.jpg" class="d-block w-100 img-fluid" alt="...">
+                                <a href="./img/projects/20190211_102143.jpg" data-fancybox="gallery" class="icon-box"><i class="bi bi-search"></i></a>
                             </div>
                         </div>
     
@@ -500,6 +1117,59 @@
         </div>
      </section> -->
 
+         <!-- Español
+            This section is hidden. 
+         -->
+    <section id="espanol" class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="section-title" data-aos="fade-down" data-aos-duration="1000">
+                        <h1 class="display-4 fw-semibold">SERVICIOS</h1>
+                            <div class="line"></div>
+                            <div class="line-small"></div>
+                            <h5>Favor de tener en cuenta que esta página es para ayudar a otros a tener un mejor entendimiento de lo que hacemos, los gerentes de sitio no hablan español.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between align-items-center">
+
+                <div class="col-lg-6 col-md-12" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="img/about-3.JPEG" class="img-round theme-shadow" alt="">
+                </div>
+
+                <div class="col-lg-6 col-md-12 phone-marg-top" data-aos="fade-left" data-aos-duration="1000">
+                    <h1 >UBICACIÓN DE SERVICIOS SUBTERRÁNEOS</h1>
+                    <p class="mt-3 mb-4"> <b><em>Vertex GPR</em></b> ofrece servicios para la ubicación de servicios subterráneos mediante la utilización de un radar de penetración de suelo (GPR) y detección electromagnética (EM). 
+                        La ubicación de servicios subterráneos es muy importante para la perforación de suelo, la excavación, la perforación direccional, la iluminación natural, la conformidad de la obra terminada y el diseño actualizado.
+                    </p>
+                    <div class="d-flex pt-4 mb-3">
+                        <div class="icon-box me-4">
+                            <i class="bi bi-telephone"></i>
+                        </div>
+                        <div>
+                            <h5><b><em>Direct Line of Communication</em></b></h5>
+                            <p> At Vertex GPR we understand that communication is power. How important do we feel it is? When you call or email, a GPR 
+                                Operator will quote and schedule your project during that call or in the reply email.  One call, that’s all it takes. 
+                                The GPR Operator responsible for your project will manage it from start to finish.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex mb-3">
+                        <div class="icon-box me-4">
+                            <i class="bi bi-bookmark-check"></i>
+                        </div>
+                        <div>
+                            <h5><b><em>Project Reporting </em></b></h5>
+                            <p> Vertex GPR understands that the most effective way to mitigate an unwanted strike is to have critical items marked onsite. We also realize that proper reporting of 
+                                findings is equally as important for safety and project planning. Whether your project is a subsurface utility locate or a concrete scan, we can generate various reports 
+                                ranging from a detailed written description of findings to a CAD or map.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
      <!-- contact  -->
 
      <div class="section-padding" id="contact">
@@ -547,7 +1217,7 @@
             <div class="container">
                 <div class="row gy-5">
                     <div class="col-lg-3 col-sm-6">
-                        <a href="#"><img src="" alt="">Logo</a>
+                        <a href="#"><img src="" alt="">Vertex GPR</a>
                         <div class="line"></div>
                         <p class="text-white mb-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus, laudantium.</p>
                         <div class="social-icons pt-4">
@@ -569,10 +1239,9 @@
                         <h5 class="text-white mb-0">About</h5>
                         <div class="line"></div>
                         <ul class="text-white">
-                            <li><a href="#">Concrete Scanning</a></li>
-                            <li><a href="#">Utility Locating</a></li>
-                            <li><a href="#">Concrete Scanning</a></li>
-                            <li><a href="#">Utility Locating</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#about">About the Company</a></li>
+                            <li><a href="#espanol" onclick="showSection()">Español</a></li>
                         </ul>
                     </div> 
                     <div class="col-lg-3 col-sm-6">
@@ -610,5 +1279,6 @@
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/dropdown.js"></script>
+    <script src="./js/espanol.js"></script>
 </body>
 </html>

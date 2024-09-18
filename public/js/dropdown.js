@@ -5,3 +5,4 @@ servicesDropdown.addEventListener('click', (event) => {
     // servicesDropdown.click(); // Open the dropdown menu
     window.location.href = '#services'; // Navigate to the services section
 });
+

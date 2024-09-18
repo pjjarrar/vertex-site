@@ -6,6 +6,7 @@
     --primary-color: #E47E3B;
     --primary-color-rgb: rgb(228, 126, 59);
     --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
+    --box-shadow-strong: 0 5px 10px rgba(0, 0, 0, 0.5);
     --transition: all 0.5s ease;
 }
 
@@ -79,9 +80,18 @@ img {
 
 /* navbar -------------------------------------------------- */
 
+.navbar {
+    overflow: visible;
+}
 
 
-    /* the underline for the navbar  */
+
+
+.hidden-nav-item {
+    display: none;
+}
+
+/* the underline for the navbar  */
 @media only screen and (min-width: 1200px) {
 
     .nav-link {
@@ -116,21 +126,16 @@ img {
         left: 0;
     }
     
-  }
-
-  .hidden-nav-item {
-    visibility: hidden;
-  }
-
+}
 
 /* Styles for tablets */
 @media only screen and (max-width: 991px) {
 
     .schedule-btn {
-        visibility: hidden;
+        display: none;
     }
     .hidden-nav-item {
-        visibility: visible;
+        display: block;
     }
 }
   
@@ -169,12 +174,15 @@ img {
     background-color: white;
 }
 
+/* end navbar -----------------------------------------------------------------*/
+
 
 
 
 
 /* subtitle ------------------------------------------------------------------- */
-.sub-title {
+
+/* .sub-title {
     position: relative;
     display: inline-block;
     text-transform: uppercase;
@@ -203,7 +211,7 @@ img {
     margin-top: -6px;
     margin-right: -50px;
     border: 1px solid var(--bs-primary) !important;
-}
+} */
 
 
 
@@ -242,6 +250,13 @@ img {
         background-color: black;
     }
 }
+
+/* espanol  */
+#espanol {
+    display: none;
+}
+
+
 
 /* about ----------------------------------------------------------------- */
 
@@ -304,6 +319,12 @@ img {
     }
 
   }
+@media only screen and (max-width: 991px) {
+
+    .medium-margin-top {
+        margin-top: 20px;
+    }
+}
 
 /* icon-box ---------------------------------------------------------------- */
 
@@ -461,6 +482,20 @@ img {
     border-radius: 10%;
 }
 
+/* FAQ ---------------------------------------------------- */
+.faq-section {
+    background: linear-gradient(rgba(255, 255, 255, .9), rgba(255, 255, 255, 0.8)), url(../img/breadcrums.JPEG);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.icon-box.faq-item {
+    background-color: white;
+    border-radius: 100%;
+}
+
 /* projects ----------------------------------------------- */
 
 .project-item .icon-box {
@@ -503,6 +538,16 @@ img {
 
 .carousel-btn {
     color: var(--bs-primary);
+}
+
+.frame {
+    border-radius: 3%;
+    box-shadow: var(--box-shadow-strong);
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    border-color: #E47E3B;
+    opacity: 1;
 }
 
 /* contact us ----------------------------------------------------------------- */
@@ -621,5 +666,8 @@ footer .line {
     scale: 1.1;
     background-color: var(--bs-primary);
     color: white;
+}
 
+.topbar  .social-icons a{
+    background-color: #E47E3B;
 }
