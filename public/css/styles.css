@@ -47,6 +47,7 @@ img {
     box-shadow: var(--box-shadow);
 }
 
+
 /* image zoom  */
 .image-zoom {
     position: relative;
@@ -352,6 +353,12 @@ img {
     background-repeat: no-repeat;
 }
 
+@media (max-width: 768px) {
+    .about-cont {
+        background: lightgrey;
+    }
+}
+
 .about-cont .counter {
     position: relative;
     text-align: center;
@@ -477,6 +484,12 @@ img {
     background-repeat: no-repeat;
 }
 
+@media (max-width: 768px) {
+    #quote {
+        background: lightgrey;
+    }
+}
+
 .quote-name {
     border-radius: 10%;
 }
@@ -488,6 +501,12 @@ img {
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+@media (max-width: 768px) {
+    .faq-section {
+        background: lightgrey;
+    }
 }
 
 .icon-box.faq-item {
@@ -566,6 +585,12 @@ img {
     left: 0;
     z-index: -1;
 
+}
+
+@media (max-width: 768px) {
+    #contact::after {
+        background: lightgrey;
+    }
 }
 
 #contact .form-control {
