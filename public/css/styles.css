@@ -3,7 +3,7 @@
 /* built by Wego Technologies  */
 
 :root {
-    --primary-color: #E47E3B;
+    --primary-color: #DE691B;
     --primary-color-rgb: rgb(228, 126, 59);
     --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
     --box-shadow-strong: 0 5px 10px rgba(0, 0, 0, 0.5);
@@ -77,6 +77,15 @@ img {
 
 .small-txt {
     color: white;
+}
+
+.bg-primary {
+    background-color: #DE691B !important;
+}
+
+
+.btn-primary {
+    background-color: #DE691B;
 }
 
 /* navbar -------------------------------------------------- */
@@ -689,5 +698,5 @@ footer .line {
 }
 
 .topbar  .social-icons a{
-    background-color: #E47E3B;
+    background-color: #DE691B;
 }
