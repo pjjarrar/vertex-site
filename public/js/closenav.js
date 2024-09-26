@@ -1,10 +1,18 @@
 // document.querySelectorAll('#top-navbar .nav-link').forEach(link => {
 //     link.addEventListener('click', function() {
+
+//         const targetSection = this.getAttribute('href');
+
 //         // Get the offcanvas element
 //         var offcanvasElement = document.getElementById('top-navbar');
 //         // Hide the offcanvas after click
-//         var offcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement); 
-//         offcanvas.hide();
+
+//         if(targetSection === "#about") {
+//             console.log(offcanvasElement);
+//         } else {
+//             var offcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement); 
+//             offcanvas.hide();
+//         }
 //     });
 // });
 
