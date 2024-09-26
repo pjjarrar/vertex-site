@@ -67,23 +67,7 @@ img {
 
 /* SVG logo -------------------------------------- */
 
-@media only screen and (max-width: 768px) {
-    .g-txt {
-        transform: translateX(30px);
-    }
-    .pr-txt {
-        transform: translate(30px);
-    }
-}
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .g-txt {
-        transform: translateX(30px);
-    }
-    .pr-txt {
-        transform: translate(30px);
-    }
-}
 
 /* back to top button --------------------------- */
 
@@ -313,11 +297,19 @@ img {
     }
 }
 
-/* espanol  */
+/* espanol  ------------------------------------------------------------- */
+
 #espanol {
     display: none;
 }
 
+.about-cont-spanish {
+    /* background: lightgrey; */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
 
 
 /* about ----------------------------------------------------------------- */
