@@ -17,10 +17,12 @@ html {
 
 *{
     box-sizing: border-box;
+    /* outline: 1px solid red;  */
 }
 
 body {
     font-family: 'Poppins', sans-serif;
+    /* overflow-x: hidden; */
 }
 
 a {
@@ -265,7 +267,7 @@ img {
 /* hero -------------------------------------------------------------- */
 
 #hero {
-    background: linear-gradient(#00000089, #0000006a), url(../img/site-photos/_DSF0995.jpg);
+    background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF0995.jpg?updatedAt=1727738804167);
     background-position: center;
     /* background-repeat: no-repeat; */
     background-size: cover;
@@ -399,7 +401,7 @@ img {
 
 /*** About Cont. Start ------------------------------------------------------ ***/
 .about-cont {
-    background: linear-gradient(#00000089, #0000006a), url(../img/site-photos/_DSF1223.jpg);
+    background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF0905.jpg?updatedAt=1727738804399);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -408,13 +410,19 @@ img {
 
 @media (max-width: 768px) {
     .about-cont {
-        background: lightgrey;
+        background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF1223.jpg?updatedAt=1727738801935);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 }
 
 @media only screen and (max-width: 991px) {
     .about-cont {
-        background: lightgrey;
+        background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF1223.jpg?updatedAt=1727738801935);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 }
 
@@ -536,7 +544,7 @@ img {
 
 /* quote -------------------------------------------------- */
 #quote {
-    background: linear-gradient(#00000089, #0000006a), url(../img/site-photos/_DSF1223.jpg);
+    background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF1223.jpg?updatedAt=1727738801935);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -545,13 +553,26 @@ img {
 
 @media (max-width: 768px) {
     #quote {
-        background: lightgrey;
+        background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF0853.jpg?updatedAt=1727738804819);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 }
 @media only screen and (max-width: 991px) {
     #quote {
-        background: lightgrey;
+        background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF0853.jpg?updatedAt=1727738804819);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
+}
+
+.quote-img {
+    height: 200px;
+    border-radius: 100%;
+    
+
 }
 
 .quote-name {
@@ -560,7 +581,7 @@ img {
 
 /* FAQ ---------------------------------------------------- */
 .faq-section {
-    background: linear-gradient(#00000089, #0000006a), url(../img/site-photos/_DSF1223.jpg);
+    background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF1223.jpg?updatedAt=1727738801935);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -569,12 +590,18 @@ img {
 
 @media (max-width: 768px) {
     .faq-section {
-        background: lightgrey;
+        background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF1223.jpg?updatedAt=1727738801935);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 }
 @media only screen and (max-width: 991px) {
     .faq-section {
-        background: lightgrey;
+        background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF1223.jpg?updatedAt=1727738801935);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 }
 
@@ -644,7 +671,7 @@ img {
     content: "";
     width: 100%;
     height: 70%;
-    background: linear-gradient(#00000089, #0000006a), url(../img/site-photos/_DSF1223.jpg);
+    background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF1223.jpg?updatedAt=1727738801935);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -658,12 +685,18 @@ img {
 
 @media (max-width: 768px) {
     #contact::after {
-        background: lightgrey;
+        background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF1223.jpg?updatedAt=1727738801935);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 }
 @media only screen and (max-width: 991px) {
     #contact::after {
-        background: lightgrey;
+        background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF1223.jpg?updatedAt=1727738801935);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
 }
 
