@@ -129,10 +129,10 @@ img {
 
 /* navbar -------------------------------------------------- */
 
-.navbar {
+/* .navbar {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
-}
+} */
 
 .navbar {
     overflow: visible;
