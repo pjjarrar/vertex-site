@@ -22,19 +22,6 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    /* overflow-x: hidden; */
-}
-
-@media only screen and (max-width: 991px) {
-    body {
-        overflow-x: hidden; /* fixes side scroll in mobile view */
-    }
-}
-  
-@media only screen and (max-width: 767px) {
-    body {
-        overflow-x: hidden; /* fixes side scroll in mobile view */
-    }
 }
 
 
@@ -143,10 +130,13 @@ img {
 /* navbar -------------------------------------------------- */
 
 .navbar {
-    overflow: visible;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
 }
 
-
+.navbar {
+    overflow: hidden;
+}
 
 
 .hidden-nav-item {
