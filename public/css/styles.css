@@ -572,15 +572,13 @@ img {
     }
 }
 
-.quote-img {
-    height: 200px;
-    border-radius: 100%;
-    
-
-}
-
 .quote-name {
     border-radius: 10%;
+}
+
+.company-title {
+    color: grey;
+    opacity: 0.5;
 }
 
 /* FAQ ---------------------------------------------------- */
@@ -632,6 +630,12 @@ img {
 }
 
 /* review ------------------------------------------------------------------ */
+
+.review-person img {
+    height: 150px;
+    width: auto;
+
+}
 
 .review-head {
     position: relative;
