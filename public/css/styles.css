@@ -134,9 +134,9 @@ img {
     -webkit-transform: translateZ(0);
 }
 
-/* .navbar {
-    overflow: hidden;
-} */
+.navbar {
+    overflow: visible;
+}
 
 
 .hidden-nav-item {
