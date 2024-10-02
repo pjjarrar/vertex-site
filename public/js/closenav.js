@@ -16,6 +16,23 @@
 //     });
 // });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const navbarToggler = document.querySelector('.navbar-toggler');
+    const navbarIcon = document.getElementById('navbar-icon');
+    
+    navbarToggler.addEventListener('click', function() {
+        const isCollapsed = navbarToggler.getAttribute('aria-expanded') === 'false';
+        
+        if (isCollapsed) {
+            navbarIcon.classList.remove('bi-x');
+            navbarIcon.classList.add('bi-list');  // Change back to original icon when closed
+        } else {
+            navbarIcon.classList.remove('bi-grid');
+            navbarIcon.classList.add('bi-x');  // Change this to whatever icon you want when open
+        }
+    });
+});
+
 document.querySelectorAll('#top-navbar .nav-link').forEach(link => {
     link.addEventListener('click', function() {
         // Smooth scroll to the target section
@@ -34,3 +51,4 @@ document.querySelectorAll('#top-navbar .nav-link').forEach(link => {
         }, 300); // Adjust delay timing if necessary
     });
 });
+

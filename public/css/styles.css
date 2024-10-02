@@ -134,6 +134,10 @@ img {
     -webkit-transform: translateZ(0);
 } */
 
+.navbar-toggle-button {
+    font-size: 30px;
+}
+
 .navbar {
     overflow: visible;
 }
