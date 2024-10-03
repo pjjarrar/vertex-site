@@ -84,7 +84,7 @@ img {
     }
 
     .gpr-logo {
-        transform: translate(20px, 0px); /* adds space between vertex and gpr in mobile view */
+        transform: translate(30px, 0px); /* adds space between vertex and gpr in mobile view */
     }
 }
 
