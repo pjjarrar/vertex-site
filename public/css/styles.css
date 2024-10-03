@@ -77,7 +77,15 @@ img {
 
 /* SVG logo -------------------------------------- */
 
-
+@media (max-width: 768px) {
+    .svg-logo {
+        /* width: 90%;   */
+        /* margin: 0 auto; */
+    }
+    .gpr-logo {
+        transform: translate(15px, 0px);
+    }
+}
 
 /* back to top button --------------------------- */
 
