@@ -117,7 +117,13 @@ img {
         /* visibility: hidden; */
         display: none;
     }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #toTop {
+        /* visibility: hidden; */
+        display: none;
     }
+}
 
 
 
@@ -145,23 +151,6 @@ img {
 
 /* navbar -------------------------------------------------- */
 
-
-@media only screen and (max-width: 375px) {
-
-    .navbar-toggler {
-        font-size: 20px;
-    }
-}
-
-/* .navbar-toggler-icon {
-    font-size: 10px;
-} */
-
-
-
-.navbar-toggle-button {
-    font-size: 25px;
-}
 
 .navbar {
     overflow: visible;
@@ -427,6 +416,16 @@ img {
         background-repeat: no-repeat;
     }
 }
+
+/* @media screen and (min-width: 768px) and (max-width: 1024px) {
+   
+    .about-cont {
+        background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF1223.jpg?updatedAt=1727738801935);
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+} */
 
 .about-cont .counter {
     position: relative;
