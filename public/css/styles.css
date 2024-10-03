@@ -82,8 +82,9 @@ img {
         /* width: 90%;   */
         /* margin: 0 auto; */
     }
+
     .gpr-logo {
-        transform: translate(20px, 0px);
+        transform: translate(20px, 0px); /* adds space between vertex and gpr in mobile view */
     }
 }
 
@@ -144,10 +145,6 @@ img {
 
 /* navbar -------------------------------------------------- */
 
-/* .navbar {
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateZ(0);
-} */
 
 @media only screen and (max-width: 375px) {
 
