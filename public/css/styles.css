@@ -78,11 +78,19 @@ img {
 /* SVG logo -------------------------------------- */
 
 @media (max-width: 768px) {
-    .svg-logo {
-        /* width: 90%;   */
-        /* margin: 0 auto; */
+    .gpr-logo {
+        transform: translate(30px, 0px); /* adds space between vertex and gpr in mobile view */
     }
+}
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .gpr-logo {
+        transform: translate(30px, 0px); /* adds space between vertex and gpr in mobile view */
+    }
+}
+
+/* iPad in landscape mode */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .gpr-logo {
         transform: translate(30px, 0px); /* adds space between vertex and gpr in mobile view */
     }
@@ -401,7 +409,7 @@ img {
 
 @media (max-width: 768px) {
     .about-cont {
-        background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF1223.jpg?updatedAt=1727738801935);
+        background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF0905.jpg?updatedAt=1727738801935);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -410,22 +418,12 @@ img {
 
 @media only screen and (max-width: 991px) {
     .about-cont {
-        background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF1223.jpg?updatedAt=1727738801935);
+        background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF0905.jpg?updatedAt=1727738801935);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
     }
 }
-
-/* @media screen and (min-width: 768px) and (max-width: 1024px) {
-   
-    .about-cont {
-        background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF1223.jpg?updatedAt=1727738801935);
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-    }
-} */
 
 .about-cont .counter {
     position: relative;
