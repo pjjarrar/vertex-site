@@ -81,6 +81,9 @@ img {
     .gpr-logo {
         transform: translate(30px, 0px); /* adds space between vertex and gpr in mobile view */
     }
+    .pr-logo {
+        transform: translate(100px, 0px);
+    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
