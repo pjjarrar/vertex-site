@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- * built and designed by WeGo Technologies * -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concrete Scanning | The Zachman Group</title>
+
+    <!-- favicon  -->
+    <link rel="icon" href="img/favicon.png" type="image/png" sizes="32x32">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- customized bootstrap styles -->
+    <link rel="stylesheet" href="./css/main.css">
+
+    <!-- template style -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- top bar -->
+    <div class="container-fluid bg-primary px-5 d-none d-lg-block p-1">
+        <div class="row gx-0 align-items-center topbar">
+            <div class="col-lg-5 text-center text-lg-start mb-lg-0">
+                <div class="d-flex">
+                    <a href="mailto:info@thezachmangroup.com" class="me-4"><i class="fas fa-envelope me-2"></i>info@thezachmangroup.com</a>
+                    <a href="tel:+18327071585" class="me-0"><i class="fas fa-phone-alt me-2"></i>832.707.1585</a>
+                </div>
+            </div>
+            <div class="col-lg-3 row-cols-1 text-center mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center social-icons mt-0" style="height: 45px;">
+                    <a class="me-2" href=""><i class="fab fa-twitter fw-normal text-white"></i></a>
+                    <a class="me-2" href=""><i class="fab fa-facebook-f fw-normal text-white"></i></a>
+                    <a class="me-2" href=""><i class="fab fa-linkedin-in fw-normal text-white"></i></a>
+                    <a class="me-2" href=""><i class="fab fa-instagram fw-normal text-white"></i></a>
+                    <a class="" href=""><i class="fab fa-youtube fw-normal text-white"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center">
+                    <a href="index.html#espanol" onclick="showSection()" class="mx-2"> Español</a><small class="small-txt"> / </small>
+                    <a href="index.html#contact" class="ms-2"> Contact</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- navbar 3  -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow sticky-top py-3 py-lg-0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/brand-logo.png" alt="The Zachman Group Logo" width="180px" height="auto">
+            </a>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header pt-4">
+                    <img src="img/brand-logo.png" alt="The Zachman Group Logo" width="180px" height="auto">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-3 mx-2 px-lg-0 py-1 py-lg-4">
+                            <a class="nav-link" href="index.html#hero">Home</a>
+                        </li>
+                        <li class="nav-item px-3 mx-2 px-lg-0 py-1 py-lg-4">
+                            <a class="nav-link" href="index.html#services">Services</a>
+                        </li>
+                        <li class="nav-item px-3 mx-2 px-lg-0 py-1 py-lg-4">
+                            <a class="nav-link" href="index.html#about">About</a>
+                        </li>
+                        <li class="nav-item px-3 mx-2 px-lg-0 py-1 py-lg-4">
+                            <a class="nav-link" href="index.html#projects">Photos</a>
+                        </li>
+                        <li class="nav-item px-3 mx-2 px-lg-0 py-1 py-lg-4 hidden-nav-item">
+                            <a class="nav-link" href="index.html#contact">Contact</a>
+                        </li>
+                        <li class="nav-item px-3 mx-2 px-lg-0 py-1 py-lg-4 hidden-nav-item">
+                            <a class="nav-link" href="index.html#espanol" onclick="showSection()">Español</a>
+                        </li>
+                        <li class="nav-item px-3 mx-2 px-lg-0 py-1 py-lg-4">
+                            <a href="index.html#contact" class="btn btn-primary rounded-pill schedule-btn text-white">Schedule Service</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="section-title" data-aos="fade-down" data-aos-duration="1000">
+                        <h1 class="display-4 fw-semibold">Concrete Scanning</h1>
+                        <div class="line"></div>
+                        <div class="line-small"></div>
+                        <h5>Precision and Accuracy in Every Project</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-between align-items-center pb-3">
+                <div class="col-lg-6 col-md-12" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="img/site_photos/_DSF0853.jpg" class="img-round theme-shadow" alt="">
+                </div>
+
+                <div class="col-lg-6 col-md-12 phone-marg-top" data-aos="fade-left" data-aos-duration="1000">
+                    <h1>Concrete Scanning</h1>
+                    <p class="mt-3 mb-4">Concrete scanning is essential for locating components that are critical in nature to a structure's integrity.
+                        <br>
+                        <br>
+                        When your project requires demolition of any type, it is critical to know the location of post-tension cables, conduits and structural
+                        reinforcing. Having this information in real-time ensures safer working conditions and greater strike reduction.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="section-title" data-aos="fade-down" data-aos-duration="1000">
+                        <h1 class="display-4 fw-semibold">FAQ</h1>
+                        <div class="line"></div>
+                        <div class="line-small"></div>
+                        <h5>Frequently Asked Questions</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            <div class="icon-box me-4 faq-item">
+                                <i class="bi bi-question-circle-fill"></i>
+                            </div>
+                            How Does GPR Work?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <p>Ground Penetrating Radar (GPR) often referred to as Concrete Scanning or Concrete X-ray,
+                                works by sending a pulse of energy into concrete and measuring the strength and time of the returning signal.
+                                The equipment will repeat this action multiple times as the unit is maneuvered across a surface and process the 
+                                returning data points. This processed data will then appear on the operating system's monitor and is interpreted by the 
+                                GPR Operator.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            <div class="icon-box me-4 faq-item">
+                                <i class="bi bi-question-circle-fill"></i>
+                            </div>
+                            How Long Does Data Processing Take?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>Findings are collected in real time. This means there is no post job processing that needs to be completed. 
+                                A GPR Operator can mark out findings as they go along, allowing for timely decisions.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            <div class="icon-box me-4 faq-item">
+                                <i class="bi bi-question-circle-fill"></i>
+                            </div>
+                            How Are Findings Noted?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>Once an area is scanned the findings will be marked directly on the surface. This can be done with spray paint, or lumber crayon. 
+                                If items can be categorized they will be color coded and labeled. Reports of findings can also be created.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                            <div class="icon-box me-4 faq-item">
+                                <i class="bi bi-question-circle-fill"></i>
+                            </div>
+                            Is GPR Safe?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Yes, GPR is completely safe to operate around people. The frequency emissions are less than that of a smart phone.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                            <div class="icon-box me-4 faq-item">
+                                <i class="bi bi-question-circle-fill"></i>
+                            </div>
+                            How Mobile Is The Equipment?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            The equipment is very compact and mobile. Most surfaces can be scanned as long as the area is relatively smooth and dry.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                            <div class="icon-box me-4 faq-item">
+                                <i class="bi bi-question-circle-fill"></i>
+                            </div>
+                            How Accurate Is GPR?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            When scanning concrete, GPR has an accuracy of approximately +/- a quarter of an inch horizontally from the center of the item and one-half inch vertically from the surface of the scan to the top of the item.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+                            <div class="icon-box me-4 faq-item">
+                                <i class="bi bi-question-circle-fill"></i>
+                            </div>
+                            Is GPR Noisy?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            No, GPR is very quiet to operate.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <footer class="bg-dark">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-5">
+                    <div class="col-lg-3 col-sm-6">
+                        <a href="#hero">
+                            <img src="img/brand-logo2.png" alt="The Zachman Group Logo" width="70%" height="auto">
+                        </a>
+                        <div class="line"></div>
+                        <p class="text-white mb-0"><strong>The Zachman Group</strong> is designed to provide exceptional subsurface utility locating and concrete scanning services. 
+                            Built on industry experience and utilizing cutting-edge technology, we deliver effective results.</p>
+                        <div class="social-icons pt-4">
+                            <a href="#"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                            <a href="https://www.facebook.com/p/Vertex-GPR-100083068311469/?_rdr"><i class="bi bi-facebook"></i></a>
+                            <a href="https://www.linkedin.com/company/vertex-gpr-llc/"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="text-white mb-0">Services</h5>
+                        <div class="line"></div>
+                        <ul class="text-white">
+                            <li><a href="#services">Concrete Scanning</a></li>
+                            <li><a href="#services">Utility Locating</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="text-white mb-0">About</h5>
+                        <div class="line"></div>
+                        <ul class="text-white">
+                            <li><a href="" data-bs-toggle="modal" data-bs-target="#careers">Careers</a></li>
+                            <li><a href="#about">About the Company</a></li>
+                            <li><a href="#espanol" onclick="showSection()">Español</a></li>
+                            <li><a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Terms & Conditions</a></li>
+                        </ul>
+                    </div> 
+                    <div class="col-lg-3 col-sm-6">
+                        <h5 class="text-white mb-0">Contact Us</h5>
+                        <div class="line"></div>
+                        <ul class="text-white">
+                            <li><a href="#"><strong><em>Houston</em></strong></a></li>
+                            <li><a href="tel:+18327071585">(832)-707-1585</a></li>
+                            <br>
+                            <li><a href="#"><strong><em>Galveston</em></strong></a></li>
+                            <li><a href="tel:+19368287380">(936)-828-7380</a></li>
+                            <br>
+                            <li><a href="mailto:info@thezachmangroup.com">info@thezachmangroup.com</a></li>
+
+                        </ul>
+                    </div>       
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-white">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-auto">
+                        <p class="mb-0">
+                            © Copyright The Zachman Group ™. All Rights Reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </footer>
+     <!-- end of footer -->
+
+    <!-- js -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/espanol.js"></script>
+    <script src="./js/closenav.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- Modal for terms & conditions  -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Terms & Conditions</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Copy all terms & conditions content from index.html modal -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-primary text-white" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for careers  -->
+    <div class="modal fade" id="careers" tabindex="-1" aria-labelledby="careersLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="careersLabel">Careers</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body faq-section">
+                    <!-- Copy all careers content from index.html modal -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary text-white" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

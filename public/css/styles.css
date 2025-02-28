@@ -251,8 +251,8 @@ img {
 
 /* hero -------------------------------------------------------------- */
 
-#hero {
-    background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF0995.jpg?updatedAt=1727738804167);
+#hero { 
+    background: linear-gradient(#00000089, #0000006a), url(../img/site_photos/_DSF0995.jpg);
     background-position: center;
     /* background-repeat: no-repeat; */
     background-size: cover;
@@ -361,7 +361,7 @@ img {
 
 /*** About Cont. Start ------------------------------------------------------ ***/
 .about-cont {
-    background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF0905.jpg?updatedAt=1727738804399);
+    background: linear-gradient(#00000089, #0000006a), url(../img/site_photos/_DSF0905.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -370,7 +370,7 @@ img {
 
 @media (max-width: 768px) {
     .about-cont {
-        background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF0905.jpg?updatedAt=1727738801935);
+        background: linear-gradient(#00000089, #0000006a), url(../img/site_photos/_DSF0905.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -379,7 +379,7 @@ img {
 
 @media only screen and (max-width: 991px) {
     .about-cont {
-        background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF0905.jpg?updatedAt=1727738801935);
+        background: linear-gradient(#00000089, #0000006a), url(../img/site_photos/_DSF0905.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -505,7 +505,7 @@ img {
 
 /* quote -------------------------------------------------- */
 #quote {
-    background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF1223.jpg?updatedAt=1727738801935);
+    background: linear-gradient(#00000089, #0000006a), url(../img/site_photos/_DSF1223.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -514,7 +514,7 @@ img {
 
 @media (max-width: 768px) {
     #quote {
-        background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF0853.jpg?updatedAt=1727738804819);
+        background: linear-gradient(#00000089, #0000006a), url(../img/site_photos/_DSF0853.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -522,7 +522,7 @@ img {
 }
 @media only screen and (max-width: 991px) {
     #quote {
-        background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF0853.jpg?updatedAt=1727738804819);
+        background: linear-gradient(#00000089, #0000006a), url(../img/site_photos/_DSF0853.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -540,7 +540,7 @@ img {
 
 /* FAQ ---------------------------------------------------- */
 .faq-section {
-    background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF1223.jpg?updatedAt=1727738801935);
+    background: linear-gradient(#00000089, #0000006a), url(../img/site_photos/_DSF1223.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -549,7 +549,7 @@ img {
 
 @media (max-width: 768px) {
     .faq-section {
-        background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF1223.jpg?updatedAt=1727738801935);
+        background: linear-gradient(#00000089, #0000006a), url(../img/site_photos/_DSF1223.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -557,7 +557,7 @@ img {
 }
 @media only screen and (max-width: 991px) {
     .faq-section {
-        background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF1223.jpg?updatedAt=1727738801935);
+        background: linear-gradient(#00000089, #0000006a), url(../img/site_photos/_DSF1223.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -636,7 +636,7 @@ img {
     content: "";
     width: 100%;
     height: 70%;
-    background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF1223.jpg?updatedAt=1727738801935);
+    background: linear-gradient(#00000089, #0000006a), url(../img/site_photos/_DSF1223.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center center;
@@ -650,7 +650,7 @@ img {
 
 @media (max-width: 768px) {
     #contact::after {
-        background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF1223.jpg?updatedAt=1727738801935);
+        background: linear-gradient(#00000089, #0000006a), url(../img/site_photos/_DSF1223.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -658,7 +658,7 @@ img {
 }
 @media only screen and (max-width: 991px) {
     #contact::after {
-        background: linear-gradient(#00000089, #0000006a), url(https://ik.imagekit.io/ovzyfhgik4/_DSF1223.jpg?updatedAt=1727738801935);
+        background: linear-gradient(#00000089, #0000006a), url(../img/site_photos/_DSF1223.jpg);
         background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
@@ -749,17 +749,49 @@ footer .line {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(225, 225, 225, 0.7);
-    transition: var(--transition);
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 100px;
+    margin-right: 10px;
 }
 
 .social-icons a:hover {
-    scale: 1.1;
-    background-color: var(--bs-primary);
-    color: white;
+    background-color: var(--primary);
+    color: #fff;
 }
 
 .topbar  .social-icons a{
     background-color: #DE691B;
+}
+
+.footer {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/site_photos/_DSF0853.jpg) center center no-repeat;
+    background-size: cover;
+    padding-top: 5rem;
+}
+
+.footer-top {
+    padding-bottom: 90px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .footer-top ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .footer-top ul li {
+    margin-bottom: 10px;
+}
+
+.footer .footer-top ul a {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+}
+
+.footer .footer-top ul a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    padding: 30px 0;
 }
