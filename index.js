@@ -1,9 +1,19 @@
 const express = require('express');
 require('dotenv').config();
 const nodemailer = require('nodemailer');
+const rateLimit = require('express-rate-limit');
 
 const app = express();
 const port = process.env.PORT || 3000;
+
+// Rate Limiter Middleware
+const formLimiter = rateLimit({
+  windowMs: 60 * 1000, // 1 minute
+  max: 5, // Limit each IP to 5 requests per windowMs
+  message: { message: "Too many requests, please try again later." },
+  standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
+  legacyHeaders: false, // Disable the `X-RateLimit-*` headers
+});
 
 // Middleware to parse form data
 app.use(express.urlencoded({ extended: true }));
@@ -47,7 +57,14 @@ async function sendContactEmail(formData) {
 }
 
 // Server-Side Express Route
-app.post('/submit-form', async (req, res) => {
+app.post('/submit-form', formLimiter, async (req, res) => {
+  // Honeypot Check
+  if (req.body.website) {
+    console.log('Honeypot triggered. Rejecting submission silently.');
+    // Deceptive success response
+    return res.status(200).json({ message: "Success!" });
+  }
+
   try {
     await sendContactEmail(req.body);
     res.status(200).json({ message: "Success!" });

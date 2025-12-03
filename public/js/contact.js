@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const email = contactForm.querySelector('input[name="email"]').value;
             const subject = contactForm.querySelector('input[name="subject"]').value;
             const message = contactForm.querySelector('textarea[name="message"]').value;
+            const website = document.getElementById('website').value; // Honeypot
 
             // Combine name
             const fullName = `${firstName} ${lastName}`.trim();
@@ -24,7 +25,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 name: fullName,
                 email: email,
                 subject: subject,
-                message: message
+                message: message,
+                website: website // Send honeypot value
             };
 
             try {
