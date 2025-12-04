@@ -24,7 +24,7 @@ app.use(express.static(__dirname + '/public'));
 
 // Nodemailer Configuration Function
 async function sendContactEmail(formData) {
-  const { name, email, message } = formData;
+  const { name, email, subject, message } = formData;
 
   const transporter = nodemailer.createTransport({
     service: 'gmail',
@@ -42,6 +42,7 @@ async function sendContactEmail(formData) {
             <h3>New Contact Request</h3>
             <p><strong>Name:</strong> ${name}</p>
             <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Subject:</strong> ${subject}</p>
             <p><strong>Message:</strong></p>
             <p>${message}</p>
         `
