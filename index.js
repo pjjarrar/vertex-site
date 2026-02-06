@@ -52,7 +52,8 @@ async function sendContactEmail(formData) {
     await transporter.sendMail(mailOptions);
     console.log('Email sent successfully');
   } catch (error) {
-    console.error('Error sending email:', error);
+    console.error('Email error details:', error.message);
+    console.error('Full error:', error);
     throw error;
   }
 }
